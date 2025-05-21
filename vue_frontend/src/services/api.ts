@@ -1,5 +1,6 @@
 import axios from 'axios';
-const api = axios.create({ baseURL: import.meta.env.VITE_API_URL });
+const api = axios.create({ baseURL: "https://electiva-semana-14.vercel.app/"
+ });
 export interface Writer {
     id: number; nombre: string; apellido: string;
     nacionalidad: string; edad: number; books: any[];
