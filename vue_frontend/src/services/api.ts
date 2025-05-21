@@ -1,5 +1,5 @@
 import axios from 'axios';
-const api = axios.create({ baseURL: '/api' });
+const api = axios.create({ baseURL: import.meta.env.VITE_API_URL });
 export interface Writer {
     id: number; nombre: string; apellido: string;
     nacionalidad: string; edad: number; books: any[];
